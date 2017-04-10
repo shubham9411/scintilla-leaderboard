@@ -1,0 +1,56 @@
+.list-table th{
+	text-align: center;
+}
+.body{
+	font-family: 'Kaushan Script', cursive;
+	sans-serif;
+	word-wrap: break-word;
+}
+.heading{
+	background-color: black;
+	height: 10em;
+	display: flex;
+	align-items: flex-end;
+}
+.header-image{
+	background-color: black;
+	margin: 0 auto;
+	height: 10em
+}
+.header-text{
+	color: white;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3.5em;
+}
+.table-bordered>tbody>tr>td, 
+.table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>td, 
+.table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, 
+.table-bordered>thead>tr>th{
+	font-family: 'Lato',sans-serif;
+}
+#table-wrap{
+	margin-top: 2em;
+}
+#top-1{
+	color:#fff;
+	background-color:#337ab7
+}
+#top-1:focus,
+#top-1:hover
+{background-color:#286090}
+#top-2{
+	background-color:#dff0d8
+}
+#top-2:focus, 
+#top-2:hover{
+	background-color:#c1e2b3
+}
+#top-3{
+	background-color:#fcf8e3
+}
+#top-3:focus, 
+#top-3:hover{
+	background-color:#f7ecb5
+}
