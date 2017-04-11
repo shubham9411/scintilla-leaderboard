@@ -87,30 +87,33 @@
 @media only screen and (min-width : 68.75em) {
 	.header-text{
 		color: white;
-		font-family: 'Kaushan Script', cursive;
-		font-size: 2em;
 	}
 	.heading{
 		height: 13em;
 	}
 	.header-image{
-		background-color: black;
-		margin: 0 auto;
 		height: 12em
 	}
 }
-@media only screen and (max-width : 68.75em) {
+@media only screen and (max-width : 68.75em) and (min-width : 56.25em) {
 	.header-text{
-		color: white;
-		font-family: 'Kaushan Script', cursive;
+		font-size: 1.7em;
+	}
+	.heading{
+		height: 9em;
+	}
+	.header-image{
+		height: 9em
+	}
+}
+@media only screen and (max-width : 56.25em) {
+	.header-text{
 		font-size: 1.7em;
 	}
 	.heading{
 		height: 8em;
 	}
 	.header-image{
-		background-color: black;
-		margin: 0 auto;
-		height: 6em
+		height: 8em
 	}
 }
