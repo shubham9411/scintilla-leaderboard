@@ -23,7 +23,6 @@ fblikeCount.controller('likeController',['$scope','$http',function($scope,$http)
 		var url = $scope.url + $scope.ids[i] + $scope.query + '&access_token=' + $scope.token;
 		$http.get(url).then(function(response) {
 			for ( var j = 0 in response.data){
-				// console.log(response.data[j].likes.summary.total_count)
 				var likes = response.data[j].likes.summary.total_count
 				var message = response.data[j].name
 				var ar = []
@@ -36,6 +35,22 @@ fblikeCount.controller('likeController',['$scope','$http',function($scope,$http)
 			console.error("Error While Parsing sorry for inconvience ");
 		});
 	}
-	
-			console.log($scope.likeArray)
 }]);
+
+function search() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("rank");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
