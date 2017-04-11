@@ -62,7 +62,7 @@
 		</div>
 		<div class="alert alert-danger container text-center">
 			<p><b>Final Winners will not be declared according to this LeaderBoard.</b></p>
-			<p><b>There are other criteria too. e.g. Likedangers, Comments, Shares, Insta Likes etc</b></p>
+			<p><b>There are other criteria too. e.g. Likes, Comments, Shares, Insta Likes etc</b></p>
 		</div>
 		<div class="container">
 			<input type="text" id="myInput" onkeyup="search()" placeholder="Search for Name..">
@@ -78,7 +78,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="hero in likeArray | orderBy: '-likes' track by $index " id="top-{{$index + 1}}">
+					<tr ng-repeat="hero in likeArray | orderBy: '-likes' | limitTo : 100 : 1 track by $index " id="top-{{$index + 1}}">
 						<td class="text-center">{{$index + 1}}</td>
 						<td>{{hero.name}}</td>
 						<td>{{hero.branch}}</td>
