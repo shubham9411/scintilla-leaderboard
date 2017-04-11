@@ -11,6 +11,8 @@ fblikeCount.controller('likeController',['$scope','$http',function($scope,$http)
 	$scope.token = "{your-api-token}"
 	$scope.ids = [];
 
+	var re = new RegExp('^(#)(C|c)(ontest)');
+
 	for ( var i = 0; i < 5; i++ ) {
 		var list = []
 		for (var j = i*50; j < (i+1)*50; j++) {
@@ -27,9 +29,11 @@ fblikeCount.controller('likeController',['$scope','$http',function($scope,$http)
 				var message = response.data[j].name
 				var ar = []
 				ar = message.split('\n')
-				var name = ar[1]
-				var branch = ar[2]
-				$scope.likeArray.push({'likes':likes,'name':name,'branch':branch})
+				if(re.test(ar[0])){
+					var name = ar[1]
+					var branch = ar[2]
+					$scope.likeArray.push({'likes':likes,'name':name,'branch':branch})
+				}
 			}
 		}).catch(function(data) {
 			console.error("Error While Parsing sorry for inconvience ");
