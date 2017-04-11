@@ -80,7 +80,7 @@
 				<tbody>
 					<tr ng-repeat="hero in likeArray | orderBy: '-likes' track by $index " id="top-{{$index + 1}}">
 						<td class="text-center">{{$index + 1}}</td>
-						<td>{{hero.name}}</td>
+						<td><a href="https://www.facebook.com/Scintilla123/photos/a.265026233957574.1073741828.264965970630267/{{hero.user_id}}" target="_BLANK">{{hero.name}}</a></td>
 						<td>{{hero.branch}}</td>
 						<td>{{hero.likes}}</td>
 					</tr>
