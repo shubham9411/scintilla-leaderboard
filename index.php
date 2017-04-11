@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Scintilla Leaderboard</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -58,6 +59,10 @@
 		<div class="heading">
 			<img src="Scintilla.png" alt="Scintilla" class="img-responsive header-image col-xs-7 col-sm-6 col-md-5">
 			<h1 class="header-text col-xs-5 col-sm-6 col-md-7"><b>Selfie Contest</b></h1>
+		</div>
+		<div class="alert alert-danger container text-center">
+			<p><b>Final Winners will not be declared according to this LeaderBoard.</b></p>
+			<p><b>There are other criteria too. e.g. Likedangers, Comments, Shares, Insta Likes etc</b></p>
 		</div>
 		<div class="container">
 			<input type="text" id="myInput" onkeyup="search()" placeholder="Search for Name..">
