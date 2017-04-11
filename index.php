@@ -62,7 +62,7 @@
 		</div>
 		<div class="alert alert-danger container text-center">
 			<p><b>Final Winners will not be declared according to this LeaderBoard.</b></p>
-			<p><b>There are other criteria too. e.g. Likedangers, Comments, Shares, Insta Likes etc</b></p>
+			<p><b>There are other criteria too. e.g. Likes, Comments, Shares, Insta Likes etc</b></p>
 		</div>
 		<div class="container">
 			<input type="text" id="myInput" onkeyup="search()" placeholder="Search for Name..">
