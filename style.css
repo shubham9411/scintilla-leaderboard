@@ -22,6 +22,36 @@
 	font-family: 'Kaushan Script', cursive;
 	font-size: 3.5em;
 }
+@media (min-width:380px and max-width:480px){
+	.header-text{
+		color: white;
+		font-family: 'Kaushan Script', cursive;
+		font-size: 3em;
+	}
+	.heading{
+		height: 8em;
+	}
+	.header-image{
+		background-color: black;
+		margin: 0 auto;
+		height: 7em
+	}
+}
+@media (max-width:380px){
+	.header-text{
+		color: white;
+		font-family: 'Kaushan Script', cursive;
+		font-size: 3em;
+	}
+	.heading{
+		height: 8em;
+	}
+	.header-image{
+		background-color: black;
+		margin: 0 auto;
+		height: 6em
+	}
+}
 .table-bordered>tbody>tr>td, 
 .table-bordered>tbody>tr>th, 
 .table-bordered>tfoot>tr>td, 
@@ -53,4 +83,34 @@
 #top-3:focus, 
 #top-3:hover{
 	background-color:#f7ecb5
+}
+@media only screen and (min-width : 68.75em) {
+	.header-text{
+		color: white;
+		font-family: 'Kaushan Script', cursive;
+		font-size: 2em;
+	}
+	.heading{
+		height: 13em;
+	}
+	.header-image{
+		background-color: black;
+		margin: 0 auto;
+		height: 12em
+	}
+}
+@media only screen and (max-width : 68.75em) {
+	.header-text{
+		color: white;
+		font-family: 'Kaushan Script', cursive;
+		font-size: 1.7em;
+	}
+	.heading{
+		height: 8em;
+	}
+	.header-image{
+		background-color: black;
+		margin: 0 auto;
+		height: 6em
+	}
 }

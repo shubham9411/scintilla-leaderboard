@@ -12,8 +12,8 @@
 	</head>
 	<body ng-controller="likeController">
 		<div class="heading">
-			<img src="Scintilla.png" alt="Scintilla" class="img-responsive header-image col-xs-6">
-			<h1 class="header-text col-xs-7"><b>Selfie Contest</b></h1>
+			<img src="Scintilla.png" alt="Scintilla" class="img-responsive header-image col-xs-7 col-sm-6 col-md-5">
+			<h1 class="header-text col-xs-5 col-sm-6 col-md-7"><b>Selfie Contest</b></h1>
 		</div>
 		<div class="container" id="table-wrap">
 			<table class="table table-hover list-table table-bordered">
