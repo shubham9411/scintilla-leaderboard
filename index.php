@@ -78,7 +78,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="hero in likeArray | orderBy: '-likes' track by $index " id="top-{{$index + 1}}">
+					<tr ng-repeat="hero in likeArray | orderBy: '-likes' | limitTo : 100 : 1 track by $index " id="top-{{$index + 1}}">
 						<td class="text-center">{{$index + 1}}</td>
 						<td>{{hero.name}}</td>
 						<td>{{hero.branch}}</td>
