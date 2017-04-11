@@ -27,12 +27,13 @@ fblikeCount.controller('likeController',['$scope','$http',function($scope,$http)
 			for ( var j = 0 in response.data){
 				var likes = response.data[j].likes.summary.total_count
 				var message = response.data[j].name
+				var user_id = response.data[j].id
 				var ar = []
 				ar = message.split('\n')
 				if(re.test(ar[0])){
 					var name = ar[1]
 					var branch = ar[2]
-					$scope.likeArray.push({'likes':likes,'name':name,'branch':branch})
+					$scope.likeArray.push({'likes':likes,'name':name,'branch':branch, 'user_id':user_id})
 				}
 			}
 		}).catch(function(data) {

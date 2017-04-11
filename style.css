@@ -142,3 +142,6 @@
 		height: 8em
 	}
 }
+tbody td a{
+	color: black;
+}
