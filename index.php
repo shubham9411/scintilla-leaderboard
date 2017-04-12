@@ -78,7 +78,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="hero in likeArray | orderBy: '-likes' | limitTo : 100 : 1 track by $index " id="top-{{$index + 1}}">
+					<tr ng-repeat="hero in likeArray | orderBy: '-likes' | limitTo : 150 : 1 track by $index " id="top-{{$index + 1}}">
 						<td class="text-center">{{$index + 1}}</td>
 						<td><a href="https://www.facebook.com/Scintilla123/photos/a.265026233957574.1073741828.264965970630267/{{hero.user_id}}" target="_BLANK">{{hero.name}}</a></td>
 						<td>{{hero.branch}}</td>
@@ -86,7 +86,13 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
+		<div class="container facebook">
 			<div class="fb-like" data-href="https://facebook.com/shubhampandey.in" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		</div>
+		<div class="container twitter" style="margin-top:1em">
+			<a href="https://twitter.com/shubham9411" class="twitter-follow-button" data-show-count="false">Follow @shubham9411</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
 		<div class="text-center footer">
 			Made with <b style="color: red">❤</b></strong> By <a href="https://shubhampandey.in/" rel="designer"><b>Shubham Pandey</b></a> and <a href="https://github.com/umeshdhauni/" rel=designer><b>Umesh Dhauni</b></a>
 		</div>
@@ -100,6 +106,5 @@
 			<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
-		</div>
 	</body>
 </html>

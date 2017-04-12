@@ -108,6 +108,7 @@
 }
 .footer a{
 	color: #737780;
+	text-decoration: underline;
 }
 @media only screen and (min-width : 68.75em) {
 	.header-text{
@@ -140,6 +141,10 @@
 	}
 	.header-image{
 		height: 8em
+	}
+	.facebook div span,
+	.facebook div span iframe{
+		width: 20em !important;
 	}
 }
 tbody td a{
