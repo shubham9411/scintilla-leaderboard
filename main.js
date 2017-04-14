@@ -12,7 +12,7 @@ fblikeCount.controller('likeController',['$scope','$http',function($scope,$http)
 
 	var re = new RegExp('^(#)(C|c)(ontest)');
 
-	for ( var i = 0; i < 5; i++ ) {
+	for ( var i = 0; i < 6; i++ ) {
 		var list = []
 		for (var j = i*50; j < (i+1)*50; j++) {
 			if($scope.contest_id[j] != undefined)
