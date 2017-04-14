@@ -67,6 +67,9 @@
 		<div class="container">
 			<input type="text" id="myInput" onkeyup="search()" placeholder="Search for Name..">
 		</div>
+		<div class="hidden container text-center" id="sorry">
+			<h1>Sorry For Inconvienece!</h1><small>We are out of API limit</small>
+		</div>
 		<div class="container" id="table-wrap">
 			<table class="table table-hover list-table table-bordered" id="rank">
 				<thead>
